@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>about TORONTO</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			#par1{color:yellow}
+			#par11{font-family:Arial;}
+			#par2{color:red}
+			#par22{font-family:Arial;}
+			#par3{color:orange}
+			#par33{font-family:Arial;}
+			#par4{color:purple}
+			#par44{font-family:Arial;}
+		</style>
+	</head>
+	<body>
+		<div id="title">
+			<h1 class="a1">Welcome to TORONTO!!!</h1>
+			<h2 class="a">The Biggest City of Canada</h2>
+		</div>
+		<div>
+			<ul class="a2">
+				<li><a href="javascript:;"onclick="s()">My Account</a></li>
+				<li><a href="register.html">Register</a></li>
+			</ul>
+		</div>
+		<div>
+			<ul class="bar">
+				<li><a href="index0.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="photo.html">Photo Gallery</a></li>
+				<li class="bar3"><a href="attractions.html">Attractions</a></li>
+				<li><a href="sports.html">Sports Teams</a></li>
+				<div class="clear"></div>
+			</ul>
+		</div>
+		<div>
+		</div>
+		<div class="a3">
+			<dl>
+				<dt>
+					<h1 id="par1">HISTORY</h1>
+					<h2 id="par11">When Europeans first arrived at the site of present-day Toronto, 
+					the vicinity was inhabited by the Iroquois, who by then had displaced 
+					the Wyandot (Huron) people who had occupied the region for centuries 
+					before c. 1500. The name Toronto is likely derived from the Iroquois 
+					word tkaronto, meaning "place where trees stand in the water".</h2>
+				</dt>
+				<dd></dd>
+			</dl>
+			
+			<dl>
+				<dt>
+					<h1 id="par2">LOCATION</h1>
+					<h2 id="par22">Toronto covers an area of 630 square kilometres, 
+					with a maximum north-south distance of 21 kilometres and 
+					a maximum east-west distance of 43 km. It has a 46-kilometre 
+					long waterfront shoreline, on the northwestern shore of Lake 
+					Ontario.</h2>
+				</dt>
+				<dd></dd>
+			</dl>
+			<dl>
+				<dt>
+					<h1 id="par3">CLIMATE</h1>
+					<h2 id="par33">The city of Toronto has a humid continental climate, 
+					with warm, humid summers and cold winters. The city experiences four 
+					distinct seasons, with considerable variance in length. Some parts of the 
+					north and east of the city such as Scarborough and the suburbs, have a climate 
+					classified as humid continental climate. </h2>
+				</dt>
+				<dd></dd>
+			</dl>
+			<dl>
+				<dt>
+					<h1 id="par4">CULTURE</h1>
+					<h2 id="par44">Toronto theatre and performing arts scene has more than fifty ballet and 
+					dance companies, six opera companies, two symphony orchestras and a host of theatres. 
+					The city is home to the National Ballet of Canada, the Canadian Opera Company, 
+					the Toronto Symphony Orchestra, the Canadian Electronic Ensemble, and the Canadian 
+					Stage Company.</h2>
+				</dt>
+			</dl>
+		</div>
+	</body>
+	<script type="text/javascript">
+		function s(){
+		alert("Hello User!")
+		}
+		
+		$(".input3").click(function(){
+			if($(".input_text").eq(0).find("input").val()!=0 &&$(".input_text").eq(1).find("input").val()!=0&&$(".input_text").eq(2).find("input").val()!=0){
+				alert("You have registered successfully!");
+				return false;
+			}
+		})
+	</script>
+</html>

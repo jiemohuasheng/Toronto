@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>attractions</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="title">
+			<h1 class="a1">Welcome to TORONTO!!!</h1>
+			<h2 class="a">The Biggest City of Canada</h2>
+		</div>
+		<div>
+			<ul class="a2">
+				<li><a href="javascript:;"onclick="s()">My Account</a></li>
+				<li><a href="register.html">Register</a></li>
+			</ul>
+		</div>
+		<div>
+			<ul class="bar">
+				<li><a href="index0.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="photo.html">Photo Gallery</a></li>
+				<li class="bar3"><a href="attractions.html">Attractions</a></li>
+				<li><a href="sports.html">Sports Teams</a></li>
+				<div class="clear"></div>
+			</ul>
+		</div>
+		<div>
+		</div>
+		<div class="jd_all">
+			<ol class="jd_left">
+				<li>Distillery Historic District</li>
+				<li>Harbourfront Centre</li>
+				<li>Toronto Financial District</a></li>
+				<li>Hockey Hall of Fame</a></li>
+				<li>CN Tower</a></li>
+			</ol>
+			<ul class="jd_right">
+				<li><a href="https://www.viator.com/Toronto-attractions/Distillery-Historic-District/d623-a950"><img src="images/Toronto_Distillery Historic District.jpg"/></a></li>
+				<li><a href="https://www.viator.com/Toronto-attractions/Harbourfront-Centre/d623-a951"><img src="images/Toronto_Toronto Harbourfront.jpg"/></a></li>
+				<li><a href="https://www.viator.com/Toronto-attractions/Toronto-Financial-District/d623-a24805"><img src="images/Toronto_FiDi_buildings_shutterstock.jpg"/></a></li>
+				<li><a href="https://www.viator.com/Toronto-attractions/Hockey-Hall-of-Fame/d623-a11164"><img src="images/Toronto_HockeyHallofFame.jpg"/></a></li>
+				<li><a href="https://www.viator.com/Toronto-attractions/CN-Tower/d623-a949"><img src="images/Toronto_CN Tower.jpg"/></a></li>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript">
+		function s(){
+		alert("Hello User!")
+		}
+		
+		$(".input3").click(function(){
+			if($(".input_text").eq(0).find("input").val()!=0 &&$(".input_text").eq(1).find("input").val()!=0&&$(".input_text").eq(2).find("input").val()!=0){
+				alert("You have registered successfully!");
+				return false;
+			}
+		})
+	</script>
+</html>
